@@ -39,13 +39,20 @@ p {
 label {
   color: white;
 }
+
 input {
   background-color: rgb(190, 190, 190);
   border-radius: 12px;
 }
+
 select {
   background-color: rgb(190, 190, 190);
   border-radius: 12px;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
 }
 
 .cartel {
@@ -114,6 +121,11 @@ select {
   width: 40%;
 }
 
+.imgart {
+  height: 360px;
+  width: 360px;
+}
+
 @media (min-width: 768px) {
   .banner {
     margin: 0%;
@@ -123,6 +135,21 @@ select {
     background-size: cover;
     background-position-y: 350px;
   }
+}
+
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.animmain {
+  opacity: 0;
+  animation: showup 1.2s forwards;
+  animation-delay: 3s;
 }
 
 .animtitle {
